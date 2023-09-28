@@ -17,7 +17,7 @@ if (!db) {
 
 // Create & Post 1inch Data
 module.exports.createSpread = function () {
-	cron.schedule(" */2 * * * * * ", () => {
+	cron.schedule(process.env.CRONJOB_SCHEDULE, () => {
 		let perp = `${process.env.SERVER_URL}/markets?market_name=1inch-0924`;
 		let usd = `${process.env.SERVER_URL}/markets?market_name=1inch/usd`;
 

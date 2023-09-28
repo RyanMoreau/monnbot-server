@@ -17,7 +17,7 @@ if (!db) {
 
 // Create & Post sushi Data
 module.exports.createSpread = function () {
-	cron.schedule(" */2 * * * * * ", () => {
+	cron.schedule(process.env.CRONJOB_SCHEDULE, () => {
 		let perp = `${process.env.SERVER_URL}/markets?market_name=sushi-0924`;
 		let usd = `${process.env.SERVER_URL}/markets?market_name=sushi/usd`;
 
