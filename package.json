@@ -1,0 +1,33 @@
+{
+  "name": "Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "discord.js": "^12.5.3",
+    "express": "^4.17.1",
+    "ftx-api-rest": "0.0.7",
+    "googleapis": "^74.2.0",
+    "knex": "^0.95.6",
+    "mongodb": "^3.6.8",
+    "mongoose": "^5.12.10",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "numeral": "^2.0.6",
+    "pg": "^8.6.0",
+    "query-string": "^7.0.0",
+    "react-moment": "^1.1.1",
+    "request": "^2.88.2",
+    "sqlite3": "^5.0.2"
+  }
+}
